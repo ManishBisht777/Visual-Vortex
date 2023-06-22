@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
+import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
@@ -44,7 +45,9 @@ export function SiteHeader() {
               </div>
             </Link>
             <ThemeToggle />
-            <Button>Sign In</Button>
+            <Link href="/login" className={cn(buttonVariants(), "px-6")}>
+              Sign In
+            </Link>
           </nav>
         </div>
       </div>
