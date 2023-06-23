@@ -1,7 +1,7 @@
-import { Configuration, OpenAIApi } from "openai"
+import { Configuration, OpenAIApi } from "openai-edge"
 
 const configuration = new Configuration({
-  organization: process.env.OPEN_AI_ORG_ID,
+  organization: process.env.OPENAI_ORG_ID,
   apiKey: process.env.OPENAI_API_KEY,
 })
 const openai = new OpenAIApi(configuration)

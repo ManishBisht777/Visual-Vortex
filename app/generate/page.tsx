@@ -1,3 +1,4 @@
+import { Skeleton } from "@/components/ui/skeleton"
 import PromptInput from "@/components/prompt-input"
 
 type Props = {}
@@ -12,12 +13,18 @@ export default function page({}: Props) {
         10,000+ beautiful, modern minimal store designs for inspiration
       </p>
       <PromptInput />
-      <div className="text-sm flex gap-2 mt-2 text-slate-400">
-        <span className="font-semibold bg-gradient-to-r from-red-400 via-orange-300 to-amber-200 bg-clip-text text-transparent">
-          Tip
-        </span>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-      </div>
+
+      <ul>
+        <li>Generate Image</li>
+        <li>Use suggestion</li>
+        <li>Store on cloudinary and db</li>
+        <li>Stripe integrate</li>
+        <li>Buy credits</li>
+        <li>create catalog</li>
+        <li>buy and sell</li>
+        <li>profile</li>
+        <li>Exclusive items</li>
+      </ul>
     </div>
   )
 }
